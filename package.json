@@ -1,0 +1,14 @@
+{
+  "name": "game-shop",
+  "version": "1.0.0",
+  "description": "Game Shop - Digital Game Purchase Management System (CENG 475 project)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix client",
+    "dev": "node scripts/dev.js",
+    "build": "npm run build --prefix client",
+    "start": "npm run build && npm start --prefix server",
+    "reset-db": "npm run reset-db --prefix server"
+  }
+}
